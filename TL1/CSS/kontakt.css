@@ -1,0 +1,38 @@
+.form_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2vw 8vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    grid-row-gap: 1vw;
+}
+
+form {
+    color: white;
+    font-size: 2.5vw;
+}
+
+option {
+    font-size: 1.5vw;
+}
+
+.submit {
+    font-size: 2vw;
+}
+
+input.newsletter_but {
+    width: 2vw;
+    height: 2vw;
+}
+
+textarea {
+    overflow-y: auto;
+    word-wrap:break-word;
+}
+
+@media (max-width: 600px){
+    form{
+        font-size: 3vw;
+    }
+}
+

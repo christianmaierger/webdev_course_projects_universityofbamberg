@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <title> Kontakt </title>
+        <link rel="stylesheet" href="../CSS/basic_bitch.css">
+        <link rel="stylesheet" href="../CSS/kontakt.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    </head>
+
+    <body>
+        <div class="page_container">
+            <div class="content_wrapper">
+                <header>
+                    <a href="home.html" class="header_logo">
+                        <img src="../images/logo_small.png" alt="Unser Logo" class="logo_left" />
+                    </a>
+                    <a href="home.html" class="header_logo">
+                        <img src="../images/logo_small.png" alt="Unser Logo" class="logo_right" />
+                    </a>
+                    <h1>Kontakt</h1>
+                    <nav>
+                        <a href="home.html" class="nav_button">Home</a>
+                        <div id="drop-down" class="nav_button"><a href="ueber_uns.html">&Uuml;ber Uns</a>
+                            <div class="drop-content">
+                                <a class="dropdown-content" href="franzi.html">Franzi</a>
+                                <a class="dropdown-content" href="elle.html">Elle</a>
+                                <a class="dropdown-content" href="chris.html">Chris</a>
+                            </div>
+                        </div>
+                        <a href="ladenzeile.html" class="nav_button">Ladenzeile</a>
+                        <a href="tourdaten.html" class="nav_button">Tourdaten</a>
+                    </nav>
+                </header>
+
+
+                <section>
+                    <p>
+                        Das freut uns riesig, dass Sie uns eine Flaschenpost senden wollen.
+                        Das Internet ist doch auch nur ein großer See, gefüllt mit vielen Fischen, die Kontakt aufnehmen wollen.
+                    </p>
+                    <form action="contact.php" target="_blank" method="POST">
+                        <div class="form_container">
+                            <label for="name">Name*:</label>
+                            <input type="text" id="name" name="name" required="required">
+                            <label for="mail">E-Mail*:</label>
+                            <input type="email" id="mail" name="mail" required="required">
+                            <label for="nachricht">Nachricht*:</label>
+                            <textarea id="nachricht" rows="7" required="required"></textarea>
+
+                            <label>Wie finden Sie unsere Musik?</label>
+                            <select id="musik" name="musik">
+                                <option value="toll">toll</option>
+                                <option value="supertoll">supertoll</option>
+                                <option value="supersupertoll">supersupertoll</option>
+                                <option value="agaudi">A Gaudi.</option>
+                            </select>
+                        </div>
+                            <input class="newsletter_but" type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
+                        <label for="newsletter">Klicken Sie hier um, alle Neuigkeiten unseres Musizierens mitzubekommen.</label>
+                        <br> <br>
+                        <input class="submit" type="submit" value="Abschicken">
+
+                    </form>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <a href="kontakt.html">Kontakt</a> |
+                    <a href="impressum.html">Impressum</a>
+                </div>
+                <div class="copyright">
+                    ®Copyright Abruzzi Productions 2020
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

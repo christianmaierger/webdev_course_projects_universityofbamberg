@@ -1,0 +1,21 @@
+
+.clickable_image_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2vw 8vw;
+    z-index: -1;
+}
+
+.clickable_image_container a img:hover{
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.clickable_image_container a img:hover + .text_in_box{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.clickable_image_container img{
+    width: 90%;
+}

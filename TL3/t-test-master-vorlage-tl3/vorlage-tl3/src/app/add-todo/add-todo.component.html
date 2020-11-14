@@ -1,0 +1,40 @@
+<form class="ui form">
+    <div style="padding: 30px;">
+        <div style="text-align:left;">
+
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label btn-primary">Title of Todo:</label>
+                <div class="col-sm-0 ">
+                    <input #todoTitle type="title " class="form-control " placeholder="Title " />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label btn-primary">Description:</label>
+                <div class="col-sm-0 ">
+                    <input #todoDescription type=" description " class="form-control " placeholder="Description " />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label btn-primary">Date:</label>
+                <div class="col-sm-0">
+                    <input #todoDate type="date" class="form-control " placeholder="Date" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1 col-form-label btn-primary">Done?:</div>
+                <div class="">
+                    <div class="form-check">
+                        <input #todoState class="form-check-input ml-2" type="checkbox" id="gridCheck1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-toolbar">
+                <button class="ui button btn btn-secondary mr-3" routerLink="/app-dashboard" (click)="goBack()">Cancel</button>
+                <button class="ui primary button btn btn-success " (click)="add( todoTitle.value, todoDescription.value, todoDate.value, todoState.value) ">Save
+            </button>
+            </div>
+            <p style="color:red " *ngIf="fieldsEmpty==true ">Please check again, if you filled all input fields correctly!</p>
+        </div>
+    </div>
+</form>

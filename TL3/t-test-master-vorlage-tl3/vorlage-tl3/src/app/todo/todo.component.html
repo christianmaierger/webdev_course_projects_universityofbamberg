@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="row" id="heading">
+        <div class="col align-self-start" id="title">{{ title }}</div>
+        <div class="col">{{date.getDay()}}.{{ date.getMonth()}}.{{ date.getFullYear() }}</div>
+    </div>
+
+
+    <div class="row" id="content">
+        <div class="col">{{ description }}</div>
+    </div>
+    <div class="row" id="content">
+        <a class="col-sm-2" (click)="close(this)">  Close</a>
+        <a class="item col-sm-2 mr-5" routerLink="/app-add-todo" routerLinkActive="active">Edit</a>
+
+        <button type="button" data-id="{{ todo.id }}" class="close ml-5" (click)="remove(this)" aria-label="Close">
+          <span aria-hidden="true ">&times;</span>
+        </button>
+
+    </div>
+
+</div>

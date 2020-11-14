@@ -1,0 +1,18 @@
+section video {
+    width: 80vw;
+}
+
+#signature{
+    font-style: italic;
+    font-size: 3vw;
+}
+
+@media (max-width: 600px){
+    #signature{
+        font-size: 5vw;
+    }
+
+    video {
+        width: calc(100vw - 14vw);
+      }
+}

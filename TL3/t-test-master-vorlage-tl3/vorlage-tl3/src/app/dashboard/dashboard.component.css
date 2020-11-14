@@ -1,0 +1,15 @@
+#heading{
+    background-color: grey;
+    width: 25vw;
+    height: 5vh;
+}
+
+#content{
+    background-color: lightgray;
+    width: 25vw;
+    height: 20vh;
+}
+
+svg{
+    margin: auto;
+}
